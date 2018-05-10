@@ -15,7 +15,7 @@ var _ = Describe("Source", func() {
 
 	It("should parse correctly", func() {
 		Expect(subject).To(Equal(&Source{
-			FinalSaleDecision: 1,
+			FinalSaleDecision: NilableInt(1),
 			TransactionID:     "transaction-id",
 			PaymentChain:      "payment-chain",
 			Ext:               Extension("{}"),
